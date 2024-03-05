@@ -1,75 +1,50 @@
-# Nuxt 3 Minimal Starter
+# Weather App built in Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### METR 100 Final Project
 
-## Setup
+## Authors
 
-Make sure to install the dependencies:
+This application is created by:
+
+- Kendry Duray
+- Santiago Giraldo
+- Disney Turek
+- Christie Asuoha
+- Andrew Johnson
+
+## Setup Development Environment
+
+Clone or Download the repository to your local machine.
 
 ```bash
-# npm
+git clone <repository-url>.git
+```
+
+Make sure to install the dependencies by running:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Start the development server by running:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
+
+Then you should be able to click on the local host link in your IDE. In this case, on http://localhost:3020
 
 ## Production
 
-Build the application for production:
+The production link for the application is on this page https://weather.santiago.works/
 
-```bash
-# npm
-npm run build
+You should be able to click the above production link to see the hosted application
 
-# pnpm
-pnpm run build
+Check out the deployment documentation [nuxt](https://nuxt.com/docs/getting-started/deployment) and [vercel](https://vercel.com/docs/frameworks/nuxt) for more information.
 
-# yarn
-yarn build
+## Documentation of Software Used
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction)
+- [Vercel](https://vercel.com/docs)
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
