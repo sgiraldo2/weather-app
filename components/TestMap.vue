@@ -14,6 +14,8 @@ const map = shallowRef(null);
 
 const myConfig = useRuntimeConfig()
 
+console.log('myConfig', myConfig)
+
 onMounted(() => {
   config.apiKey = myConfig.public.MAPTILER_API_KEY;
 
