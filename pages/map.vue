@@ -6,7 +6,7 @@
   <div>
     <div class="container mt-3">
       <h1 class="text-center">Map Page</h1>
-      <TestMap />
+      <MapComponent />
     </div>
   </div>
 </template>
