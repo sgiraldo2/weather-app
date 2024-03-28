@@ -9,7 +9,6 @@
         <NuxtLink to="/map" class="navbar-brand px-3 bi bi-map fs-3"></NuxtLink>
         <NuxtLink to="/radar" class="navbar-brand px-3 bi bi-radar fs-3"></NuxtLink>
         <NuxtLink to="/my-location" class="navbar-brand px-3 bi bi-crosshair fs-3"></NuxtLink>
-        <NuxtLink to="/profile" class="navbar-brand px-3 bi bi-person-fill fs-3"></NuxtLink>
       </div>
     </div>
   </nav>
