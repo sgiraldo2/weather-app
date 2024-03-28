@@ -12,7 +12,7 @@ import '@maptiler/sdk/dist/maptiler-sdk.css';
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 
-const myConfig = useRuntimeConfig()
+const myConfig = useRuntimeConfig();
 
 onMounted(() => {
   config.apiKey = myConfig.public.MAPTILER_API_KEY;
@@ -20,24 +20,25 @@ onMounted(() => {
   // const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
   const initialState = { lng: -96.702599, lat: 40.813618, zoom: 14 };
 
-  map.value = markRaw(new Map({
-    container: mapContainer.value,
-    style: MapStyle.STREETS,
-    center: [initialState.lng, initialState.lat],
-    zoom: initialState.zoom
-  }));
-
+  map.value = markRaw(
+    new Map({
+      container: mapContainer.value,
+      style: MapStyle.STREETS,
+      center: [initialState.lng, initialState.lat],
+      zoom: initialState.zoom,
+    })
+  );
 }),
-onUnmounted(() => {
-  map.value?.remove();
-})
+  onUnmounted(() => {
+    map.value?.remove();
+  });
 </script>
 
 <style scoped>
 .map-wrap {
   position: relative;
   width: 100%;
-  height: calc(100vh - 77px); /* calculate height of the screen minus the heading */
+  height: calc(100vh - (77px + var(--navbar-height))); /* calculate height of the screen minus the heading */
 }
 
 .map {
