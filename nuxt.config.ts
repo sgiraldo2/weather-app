@@ -1,5 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    // The private keys which are only available server-side
+    // Keys within public are also exposed client-side
+    public: {
+      MAPTILER_API_KEY: process.env.NUXT_MAPTILER_API_KEY,
+      WINDY_API_KEY: process.env.NUXT_WINDY_API_KEY,
+    },
+  },
+
   css: ['bootstrap/dist/css/bootstrap.css', 'bootstrap-icons/font/bootstrap-icons.css'],
   plugins: [
     { src: '~/plugins/vercel.js', mode: 'client' },

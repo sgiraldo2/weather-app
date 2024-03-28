@@ -12,10 +12,13 @@ import '@maptiler/sdk/dist/maptiler-sdk.css';
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 
-onMounted(() => {
-  config.apiKey = 'zsV2BaaY5S5RXwG5vhLp';
+const myConfig = useRuntimeConfig()
 
-  const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
+onMounted(() => {
+  config.apiKey = myConfig.public.MAPTILER_API_KEY;
+
+  // const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
+  const initialState = { lng: -96.702599, lat: 40.813618, zoom: 14 };
 
   map.value = markRaw(new Map({
     container: mapContainer.value,
