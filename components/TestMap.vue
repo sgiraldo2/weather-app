@@ -13,6 +13,7 @@ const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 
 const myConfig = useRuntimeConfig();
+console.log("test main branch rule")
 
 onMounted(() => {
   config.apiKey = myConfig.public.MAPTILER_API_KEY;
