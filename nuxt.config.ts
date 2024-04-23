@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     public: {
       MAPTILER_API_KEY: process.env.NUXT_MAPTILER_API_KEY,
       WINDY_API_KEY: process.env.NUXT_WINDY_API_KEY,
+      VISUAL_CROSSING_API_KEY: process.env.NUXT_VISUAL_CROSSING_API_KEY,
     },
   },
 

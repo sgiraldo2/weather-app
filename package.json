@@ -11,6 +11,7 @@
   "dependencies": {
     "@maptiler/sdk": "^1.2.1",
     "@vercel/analytics": "^1.2.2",
+    "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "nuxt": "^3.10.3",
@@ -23,6 +24,7 @@
     "postcss": "^8.4.35",
     "postcss-loader": "^8.1.1",
     "sass": "^1.71.1",
-    "sass-loader": "^14.1.1"
+    "sass-loader": "^14.1.1",
+    "tailwindcss": "^3.4.3"
   }
 }
