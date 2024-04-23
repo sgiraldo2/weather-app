@@ -48,3 +48,4 @@ Check out the deployment documentation [nuxt](https://nuxt.com/docs/getting-star
 - [Vercel](https://vercel.com/docs)
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [OpenWeatherMap API](https://openweathermap.org/api)
+- [Visual Crossing API](https://www.visualcrossing.com)
