@@ -61,8 +61,10 @@ import { ref } from 'vue';
 const locationInput = ref('');
 const weatherData = ref(null);
 
-// Visual Crossing API key
-const apiKey = 'JMA3SJ3T79LEQA8Q5W5JVQX93'; // Replace with your Visual Crossing API key
+const config = useRuntimeConfig();
+
+// API key for Visual Crossing
+const apiKey = config.public.VISUAL_CROSSING_API_KEY;
 
 // Fetch weather data based on user input location
 const fetchWeatherByLocation = async () => {

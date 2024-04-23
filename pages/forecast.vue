@@ -46,8 +46,10 @@ import { ref, onMounted } from 'vue';
 const locationInput = ref('');
 const forecastData = ref([]);
 
+const config = useRuntimeConfig();
+
 // API key for Visual Crossing
-const apiKey = 'JMA3SJ3T79LEQA8Q5W5JVQX93'; // Replace with your Visual Crossing API key
+const apiKey = config.public.VISUAL_CROSSING_API_KEY;
 
 // Function to adjust dates for timezones
 const adjustDateForTimezone = (dateString) => {
