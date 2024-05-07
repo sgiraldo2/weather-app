@@ -6,9 +6,10 @@
       <!-- Logo on the left -->
       <NuxtLink to="/" class="navbar-brand fs-3">Weather App</NuxtLink>
       <div class="d-flex align-items-center">
+        <NuxtLink to="/" class="navbar-brand px-3 bi bi-clock fs-3"></NuxtLink>
         <NuxtLink to="/map" class="navbar-brand px-3 bi bi-map fs-3"></NuxtLink>
-        <NuxtLink to="/forecast" class="navbar-brand px-3 bi bi-radar fs-3"></NuxtLink>
-        <NuxtLink to="/my-location" class="navbar-brand px-3 bi bi-crosshair fs-3"></NuxtLink>
+        <NuxtLink to="/forecast" class="navbar-brand px-3 bi bi-calendar-date fs-3"></NuxtLink>
+        <NuxtLink to="/conversion" class="navbar-brand px-3 bi bi-calculator fs-3"></NuxtLink>
       </div>
     </div>
   </nav>

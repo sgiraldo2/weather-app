@@ -3,7 +3,7 @@
 
 <template>
   <div class="container">
-    <h1 class="header">Weather Dashboard</h1>
+    <h1 class="header">Current Conditions</h1>
     
     <!-- Search bar and buttons -->
     <div class="input-group">
