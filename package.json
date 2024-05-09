@@ -9,7 +9,8 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@maptiler/sdk": "^1.2.1",
+    "@maptiler/sdk": "^2.0.3",
+    "@maptiler/weather": "^2.0.0",
     "@vercel/analytics": "^1.2.2",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
