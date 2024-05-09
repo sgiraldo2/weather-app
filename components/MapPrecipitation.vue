@@ -22,7 +22,7 @@ onMounted(() => {
 
   const map = new Map({
     container: mapContainer.value,
-    style: MapStyle.SATELLITE,
+    style: MapStyle.HYBRID,
     center: [initialState.lng, initialState.lat],
     zoom: initialState.zoom,
   });
