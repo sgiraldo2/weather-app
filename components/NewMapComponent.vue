@@ -28,7 +28,7 @@ const mapContainer = ref(null);
 onMounted(() => {
   config.apiKey = myConfig.public.MAPTILER_API_KEY;
   // const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
-  const initialState = { lng: -96.702599, lat: 40.813618, zoom: 4 };
+  const initialState = { lng: -96.702599, lat: 40.813618, zoom: 3 };
 
 
   const map = new Map({

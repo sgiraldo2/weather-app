@@ -22,21 +22,21 @@ onMounted(() => {
 
   const map = new Map({
     container: mapContainer.value,
-    style: MapStyle.SATELLITE,
+    style: MapStyle.BACKDROP,
     center: [initialState.lng, initialState.lat],
     zoom: initialState.zoom,
   });
 
-  const windLayer = new WindLayer();
+  // const windLayer = new WindLayer();
   const tempLayer = new TemperatureLayer();
-  const radarLayer = new RadarLayer({ colorramp: 'clouds' });
-  const precipLayer = new PrecipitationLayer({ visibility: 'none' }); // Hidden layer for data only
+  // const radarLayer = new RadarLayer({ colorramp: 'clouds' });
+  // const precipLayer = new PrecipitationLayer({ visibility: 'none' }); // Hidden layer for data only
 
   map.on('load', () => {
-    map.addLayer(windLayer);
+    // map.addLayer(windLayer);
     map.addLayer(tempLayer, 'Place labels');
-    map.addLayer(radarLayer);
-    map.addLayer(precipLayer);
+    // map.addLayer(radarLayer);
+    // map.addLayer(precipLayer);
   });
 });
 </script>
