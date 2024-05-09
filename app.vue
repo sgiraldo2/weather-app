@@ -42,7 +42,7 @@ useHead({
   --unl-scarlet: #D00000 !important;
   --unl-cream: #F5F1E7 !important;
   --unl-gray: #C7C8CA !important;
-  --unl-lighter-cream: #FFFFFB !important;
+  /* --unl-lighter-cream: #FFFFFB !important; */
   --unl-navy: #001226 !important;
   --unl-cerulean: #249AB5 !important;
   --unl-green: #BCCB2A !important;
