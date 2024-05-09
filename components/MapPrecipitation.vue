@@ -27,15 +27,15 @@ onMounted(() => {
     zoom: initialState.zoom,
   });
 
-  const windLayer = new WindLayer();
-  const tempLayer = new TemperatureLayer();
-  const radarLayer = new RadarLayer({ colorramp: 'clouds' });
+  // const windLayer = new WindLayer();
+  // const tempLayer = new TemperatureLayer();
+  // const radarLayer = new RadarLayer({ colorramp: 'clouds' });
   const precipLayer = new PrecipitationLayer({ visibility: 'none' }); // Hidden layer for data only
 
   map.on('load', () => {
-    map.addLayer(windLayer);
-    map.addLayer(tempLayer, 'Place labels');
-    map.addLayer(radarLayer);
+    // map.addLayer(windLayer);
+    // map.addLayer(tempLayer, 'Place labels');
+    // map.addLayer(radarLayer);
     map.addLayer(precipLayer);
   });
 });
